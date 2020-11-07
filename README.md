@@ -15,7 +15,7 @@ This project enhances levenshtein automan implementation on one branch forked by
   4)  Support visualization of levenshtein automaton by generating 
       picture file through dot language,one effect drawing was shown as follows:
       
-      <img src="https://github.com/apollo008/fst-levenshtein-0.4.4/blob/fst-levenshtein-0.4.4/data/lev.png" alt="levenshtein" width=375 />
+      <img src="https://github.com/apollo008/fst-levenshtein-0.4.4/tree/fst-levenshtein-0.4.4/data/lev.png" alt="levenshtein" width=375 />
 
 
 
