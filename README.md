@@ -1,3 +1,26 @@
+Enhance Levenshtein Automaton:
+===
+
+This project enhances levenshtein automan implementation on one branch forked by others. (see 
+  tests/levenshtein_test.rs for new feature effect detail example)
+  1)  Fix levenshtein automaton bugs when process some unicode characters,
+      especially Chinese characters.
+  2)  Damerau-Levenshtein features support treating one exchange 
+      operation between adjacent two characters as one operation,
+      while it is two operations during classic levenshtein;
+  3)  Support all levenshtein parameters which are completely same as 
+      features in lucene fuzzy search and spell errors check, such as 
+      prefix_length, max_expansions and so on. It also supports obtain 
+      sorted results of levenshtein automaton by similarity; 
+  4)  Support visualization of levenshtein automaton by generating 
+      picture file through dot language,one effect drawing was shown as follows:
+      
+      <img src="https://github.com/apollo008/fst-levenshtein-0.4.4/blob/fst-levenshtein-0.4.4/data/lev.png" alt="levenshtein" width=375 />
+
+
+
+
+
 fst
 ===
 This crate provides a fast implementation of ordered sets and maps using finite
@@ -73,20 +96,6 @@ Check out the documentation for a lot more examples!
 
 * `levenshtein` - **Disabled** by default. This adds the `Levenshtein`
   automaton to the `automaton` sub-module. This includes an additional
-  dependency on `utf8-ranges`. Other features are as follows: (see 
-  tests/levenshtein_test.rs for detail example)
-  1)  Fix levenshtein automaton bugs when process some unicode characters,
-      especially Chinese characters.
-  2)  Damerau-Levenshtein features support treating one exchange 
-      operation between adjacent two characters as one operation,
-      while it is two operations during classic levenshtein;
-  3)  Support all levenshtein parameters which are completely same as 
-      features in lucene fuzzy search and spell errors check, such as 
-      prefix_length, max_expansions and so on. It also supports obtain 
-      sorted results of levenshtein automaton by similarity; 
-  4)  Support visualization of levenshtein automaton by generating 
-      picture file through dot language,one effect drawing was shown as follows:
-      
-      <img src="https://github.com/apollo008/fst-levenshtein-0.4.4/blob/fst-levenshtein-0.4.4/data/lev.png" alt="levenshtein" width=375 />
+  dependency on `utf8-ranges`. 
 
 
